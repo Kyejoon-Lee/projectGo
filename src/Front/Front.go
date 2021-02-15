@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fs := http.FileServer(http.Dir("/root/BankSalad/static"))
+	fs := http.FileServer(http.Dir("/root/projectGo/static"))
 	fmt.Println(fs)
 	http.Handle("/", fs)
 
